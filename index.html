@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Campo-Minato</title>
+</head>
+<body>
+    <header>
+        <div class="container flex-container">
+            <div class="left flex-container">
+                <img src="img/Logo.png" alt="logo">
+                <h1>Campo Minato</h1>
+            </div>
+            <div class="right flex-container">
+                <p>Difficoltà:</p>
+                <select name="difficulty" id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="hard">Hard</option>
+                    <option value="crazy">Crazy</option>
+                </select>
+                <button id="btn" class="button">Play</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container flex-container" id="main-cont">
+            <div class="app">
+                <h1>Seleziona il livello di difficoltà e genera la griglia</h1>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container flex-container">
+            <p>Made with <i class="fa-solid fa-heart"></i> by Boolean</p>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html>

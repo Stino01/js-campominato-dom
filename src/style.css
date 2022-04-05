@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 686px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    background-color: #7FFFD4;
+    min-height: 500px;
+}
+
+footer {
+    width: 100%;
+    height: 5vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.left {
+    width: 50%;
+    align-items: center;
+    height: 100%;
+}
+
+.left img {
+    height: 90%;
+    margin-right: 20px;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right #difficulty {
+    margin: 0 10px;
+    padding-right: 70px;
+}
+
+.right .button {
+    padding: 0 15px;
+}
+
+footer .container {
+    align-items: center;
+}
+
+main .container {
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.app h1 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box {
+    border: 1px solid black;
+    position: relative;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
