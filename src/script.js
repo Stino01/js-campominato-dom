@@ -74,7 +74,7 @@ function colorBox(tentativiMax) {
     let num = parseInt(this.innerText);
     tentativi++
     if (bombe.includes(num)) {
-      showBox();
+      mostraBoxNascosti();
       this.style.backgroundColor = "red";
       this.innerHTML = `<i class="fa-solid fa-bomb"></i>`;
       partitaconclusa();
@@ -103,15 +103,13 @@ function partitaconclusa() {
   `
 }
 
-function showBox(){
+function mostraBoxNascosti(){
   allBox = document.querySelectorAll('.box')
   for (i = 0; i < allBox.length; i++){
       let num = parseInt(allBox[i].innerText)
       if(bombe.includes(num)){
           allBox[i].style.background = 'red';
           allBox[i].innerHTML = `<i class="fa-solid fa-bomb"></i>`;
-      } else {
-          allBox[i].style.background = '#6495ED';
       }
   }
 }
