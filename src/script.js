@@ -83,7 +83,7 @@ function colorBox(tentativiMax) {
       if (tentativi === tentativiMax) {
         resultDiv.innerHTML += `
             <h1>Hai vinto!</h1>
-            <h3>${tentativi}</h3>`;
+            <h3>Hai completato la partita in ${tentativi} tentativi</h3>`;
             showBox();
       }
     }
@@ -99,7 +99,7 @@ function partitaconclusa() {
 }
   resultDiv.innerHTML = `
   <h1>Hai perso!</h1>
-  <h3>Tentativi: ${tentativi}</h3>
+  <h3>Hai fatto solo ${tentativi} tentativi. Riprova!</h3>
   `
 }
 
